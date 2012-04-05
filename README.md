@@ -22,7 +22,7 @@ Call the supplied `forceHttps()` initializer method from your controller's `init
 	</thead>
 	<tbody>
 		<tr>
-			<td><code>environment</code></td>
+			<td><code>environments</code></td>
 			<td>string</td>
 			<td>No</td>
 			<td><code>[empty&nbsp;string]</code></td>
@@ -93,7 +93,7 @@ Or perhaps we only want HTTPS to be forced on our `create` and `update` actions:
 
 	<cfset forceHttps(only="create,update", environments="maintenance,production")>
 
-### Using inheritance to force HTTPS on every action unless requested otherwise from a child controller
+### Example 4: Using inheritance to force HTTPS on every action unless requested otherwise from a child controller
 
 You can add arguments to the `init()` method in your controller to allow for exceptions for your forced HTTP connection.
 
@@ -138,6 +138,6 @@ Here's an example `users` controller that wouldn't pass on any exceptions:
 
 This plugin was created by [Chris Peters][2] with support from [Liquifusion Studios][3].
 
-[1]: http://cfwheels.org/docs/1-1/chapter/switching-environments
+[1]: http://cfwheels.org/docs/chapter/switching-environments
 [2]: http://cfwheels.org/user/profile/1
 [3]: http://liquifusion.com/
