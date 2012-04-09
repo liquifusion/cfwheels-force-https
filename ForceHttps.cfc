@@ -16,7 +16,7 @@
 
 			// Allow app reload to clear settings
 			if (
-				StructKeyExists(url, "reload") && url.reload
+				StructKeyExists(url, "reload") && Len(url.reload)
 				&& (!Len(loc.reloadPassword) || (StructKeyExists(url, "password") && loc.reloadPassword == url.password))
 			)
 			{

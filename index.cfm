@@ -1,7 +1,7 @@
 <cfsetting enablecfoutputonly="true" />
 
 <cfset forceHttps = {}>
-<cfset forceHttps.version = "0.1">
+<cfset forceHttps.version = "0.2">
 
 <cfoutput>
 
