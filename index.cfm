@@ -1,7 +1,7 @@
 <cfsetting enablecfoutputonly="true" />
 
 <cfset forceHttps = {}>
-<cfset forceHttps.version = "0.2">
+<cfset forceHttps.version = "0.3">
 
 <cfoutput>
 
@@ -20,5 +20,7 @@
 	Created by <a href="http://cfwheels.org/user/profile/1">Chris Peters</a> with support from
 	<a href="http://liquifusion.com/">Liquifusion Studios</a>.
 </p>
+
+</cfoutput>
 
 <cfsetting enablecfoutputonly="false">
